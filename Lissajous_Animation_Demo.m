@@ -1,4 +1,4 @@
-%% Animation demo for Lissajous curve 
+%% Animation demo for Lissajous curve
 close all;clear;clc;
 
 %%
@@ -47,9 +47,9 @@ end
 % end
 
 %%
-% Save images into a GIF file. 
-% Because three-dimensional data is not supported for GIF files, 
-% call rgb2ind to convert the RGB data in the image to an indexed image A with a colormap map. 
+% Save images into a GIF file.
+% Because three-dimensional data is not supported for GIF files,
+% call rgb2ind to convert the RGB data in the image to an indexed image A with a colormap map.
 filename = 'Lissajous.gif'; % specify the output file name
 for idx = 1:length(t)
     [A,map] = rgb2ind(im{idx},256);
