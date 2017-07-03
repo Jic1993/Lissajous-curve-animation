@@ -54,7 +54,7 @@ filename = 'Lissajous.gif'; % specify the output file name
 for idx = 1:length(t)
     [A,map] = rgb2ind(im{idx},256);
     if idx == 1
-        %Set DelayTime = 0 to display next images as fast as your hardware allows
+        % Set DelayTime = 0 to display next images as fast as your hardware allows
         imwrite(A,map,filename,'gif','LoopCount',Inf,'DelayTime',0);
     else
         % To append multiple images to the first image
